@@ -1,3 +1,47 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "How's the weather?",
+      "id": "b0668265-09d8-4c66-a070-eb3667e8d573",
+      "createdAt": "2025-01-18T22:37:17.206Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Could you please specify the location for which you would like to know the weather?",
+      "refusal": null,
+      "id": "8097e4f5-282c-4e76-8fb5-388fbcf26fce",
+      "createdAt": "2025-01-18T22:37:18.120Z"
+    },
+    {
+      "role": "user",
+      "content": "TN",
+      "id": "d1c5fc6c-33a8-4f21-bb23-65c393263021",
+      "createdAt": "2025-01-18T22:37:27.326Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_2mohlYT8bciob6pWDWiI8Jzo",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User requested the weather for TN (Tennessee).\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "f67352d6-b15a-4455-b795-fb49923a9718",
+      "createdAt": "2025-01-18T22:37:28.334Z"
+    },
+    {
+      "role": "tool",
+      "content": "very cold. 17deg",
+      "tool_call_id": "call_2mohlYT8bciob6pWDWiI8Jzo",
+      "id": "81ad25b8-a619-4230-9293-83c0b62e7b90",
+      "createdAt": "2025-01-18T22:37:28.338Z"
+    }
+  ]
 }

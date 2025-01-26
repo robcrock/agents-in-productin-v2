@@ -1,0 +1,780 @@
+{
+  "experiments": [
+    {
+      "name": "reddit",
+      "sets": [
+        {
+          "runs": [
+            {
+              "input": "tell me something cool from reddit",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_jWl5lZwOygFfBkSl4h33tx9h",
+                    "type": "function",
+                    "function": {
+                      "name": "reddit",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-25T21:26:59.060Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-25T21:26:59.060Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me something cool from pop culture",
+              "output": {
+                "role": "assistant",
+                "content": "One cool trend in pop culture is the rise of retro-inspired video games. Many developers are creating games that pay homage to classic titles from the 80s and 90s, featuring pixel art graphics, chiptune music, and gameplay mechanics reminiscent of that era. This nostalgia-driven approach not only appeals to older gamers who grew up with these styles but also introduces younger players to the charm of vintage gaming. Titles like \"Shovel Knight\" and \"Celeste\" have received critical acclaim for their modern twists on classic gameplay, blending old-school aesthetics with contemporary storytelling and design.",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-25T21:33:51.122Z"
+            }
+          ],
+          "score": 0,
+          "createdAt": "2025-01-25T21:33:51.122Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me about the front page of the internet",
+              "output": {
+                "role": "assistant",
+                "content": "The \"front page of the internet\" typically refers to Reddit, a social media platform where users can share content, engage in discussions, and vote on posts and comments. Reddit is organized into various communities known as \"subreddits,\" each focused on specific topics ranging from news, science, and technology to hobbies, entertainment, and niche interests.\n\nOn the front page, users can see a curated selection of popular posts from across the site, which are ranked based on upvotes and engagement. This dynamic content allows users to discover trending topics and participate in conversations with others who share similar interests. Reddit is known for its diverse user base and the wide range of content available, making it a unique platform for information and community interaction.",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-25T21:34:23.493Z"
+            }
+          ],
+          "score": 0,
+          "createdAt": "2025-01-25T21:34:23.493Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me something cool from reddit",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_Xy124BxGGWJeyOgCTQTCAVKA",
+                    "type": "function",
+                    "function": {
+                      "name": "reddit",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-25T21:34:38.736Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-25T21:34:38.736Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me something cool from reddit",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_CyIjpyaZI4oFOVjAKYHYrU1E",
+                    "type": "function",
+                    "function": {
+                      "name": "reddit",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:34:32.441Z"
+            },
+            {
+              "input": "hi",
+              "output": {
+                "role": "assistant",
+                "content": "Hello! How can I assist you today?",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-26T02:34:32.441Z"
+            }
+          ],
+          "score": 0.5,
+          "createdAt": "2025-01-26T02:34:32.441Z"
+        }
+      ]
+    },
+    {
+      "name": "dadJoke",
+      "sets": [
+        {
+          "runs": [
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_dlgEbAZBYbbO1BEYApjMDuPt",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:39:35.434Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:39:35.434Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_HNVUaAJguZXaDALS6c8gOTsD",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:39:52.838Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:39:52.838Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a knock knock joke",
+              "output": {
+                "role": "assistant",
+                "content": "Sure! Here’s a classic knock-knock joke for you:\n\nKnock, knock.  \nWho’s there?  \nLettuce.  \nLettuce who?  \nLettuce in, it’s freezing out here!",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-26T02:40:09.228Z"
+            }
+          ],
+          "score": 0,
+          "createdAt": "2025-01-26T02:40:09.228Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_tQzahOJ0YUnItoGd24F5Km13",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:40:21.380Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:40:21.380Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_xY8HXba6DTKhgcrwXvtHPu3H",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:52:33.785Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:52:33.785Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": "Why did the scarecrow win an award? \n\nBecause he was outstanding in his field!",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "weather"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-26T02:54:08.921Z"
+            }
+          ],
+          "score": 0,
+          "createdAt": "2025-01-26T02:54:08.922Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_Mti09ZdxSp7xypCJNbENHv5i",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:54:41.481Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:54:41.481Z"
+        }
+      ]
+    },
+    {
+      "name": "generateImage",
+      "sets": [
+        {
+          "runs": [
+            {
+              "input": "Generate image of a sunset",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_qtsEK1GGawqZ9C4HV4xmOwK6",
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image",
+                      "arguments": "{\"prompt\":\"A breathtaking sunset over a tranquil beach, with vibrant hues of orange, pink, and purple blending into the sky. Silhouettes of palm trees frame the scene, and gentle waves lap at the shore, reflecting the colors of the sunset. A few fluffy clouds scatter across the sky, adding depth to the picturesque view.\"}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T02:58:10.486Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T02:58:10.486Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "Give me a random dad joke",
+              "output": {
+                "role": "assistant",
+                "content": "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 0
+                }
+              ],
+              "createdAt": "2025-01-26T02:58:33.645Z"
+            }
+          ],
+          "score": 0,
+          "createdAt": "2025-01-26T02:58:33.645Z"
+        },
+        {
+          "runs": [
+            {
+              "input": "Generate image of a sunset",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_wqaRKC4GG1WCBisu48gJw0lq",
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image",
+                      "arguments": "{\"prompt\":\"A beautiful sunset over a calm ocean, with vibrant hues of orange, pink, and purple in the sky. Silhouettes of palm trees frame the scene, and gentle waves reflect the colors of the sunset.\"}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T03:02:05.859Z"
+            },
+            {
+              "input": "Take a photo of the sunset",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_OOJksgdEUrWfd74fvLFzGKWq",
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image",
+                      "arguments": "{\"prompt\":\"A breathtaking sunset over a calm ocean, with vibrant hues of orange, pink, and purple blending in the sky. Silhouettes of distant mountains can be seen on the horizon, and gentle waves are lapping at the shore.\"}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T03:02:05.859Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T03:02:05.859Z"
+        }
+      ]
+    },
+    {
+      "name": "allTools",
+      "sets": [
+        {
+          "runs": [
+            {
+              "input": "tell me something interesting from reddit",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_owesm1TNy66hNmR5WdwlIiOl",
+                    "type": "function",
+                    "function": {
+                      "name": "reddit",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "reddit"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T14:13:21.022Z"
+            },
+            {
+              "input": "generate an image of a mountain landscape",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_b1FC4hrI6R5kCMhKui4wtxuv",
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image",
+                      "arguments": "{\"prompt\":\"A breathtaking mountain landscape featuring towering peaks covered in snow, lush green valleys below, and a clear blue sky with fluffy white clouds. A serene lake reflects the mountains, surrounded by vibrant wildflowers in the foreground.\"}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "generate_image"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T14:13:21.022Z"
+            },
+            {
+              "input": "tell me a dad joke",
+              "output": {
+                "role": "assistant",
+                "content": null,
+                "tool_calls": [
+                  {
+                    "id": "call_WyPnqzdSeHN0uF7zmPPEbW5S",
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke",
+                      "arguments": "{}"
+                    }
+                  }
+                ],
+                "refusal": null
+              },
+              "expected": {
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "dad_joke"
+                    }
+                  }
+                ]
+              },
+              "scores": [
+                {
+                  "name": "ToolCallMatch",
+                  "score": 1
+                }
+              ],
+              "createdAt": "2025-01-26T14:13:21.022Z"
+            }
+          ],
+          "score": 1,
+          "createdAt": "2025-01-26T14:13:21.022Z"
+        }
+      ]
+    }
+  ]
+}

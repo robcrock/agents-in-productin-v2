@@ -1,5 +1,3 @@
-test
-
 # Build an AI Agent from Scratch Workshop
 
 - Watch the workshop on [Frontend Masters](https://frontendmasters.com/workshops/build-ai-agent/).

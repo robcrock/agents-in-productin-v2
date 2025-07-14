@@ -185,8 +185,14 @@ The movie search demonstrates production RAG patterns:
 Run comprehensive evaluations to ensure production readiness:
 
 ```bash
-# Run a specific evaluation
-npm run eval tool_selection
+# Run all evaluations
+npm run eval
+
+# Or run directly with tsx for specific experiments:
+npx tsx evals/run.ts dadJoke
+npx tsx evals/run.ts allTools
+npx tsx evals/run.ts reddit
+npx tsx evals/run.ts generateImage
 
 # View results in the dashboard
 cd dashboard && npm run dev
@@ -262,8 +268,8 @@ npm start
 
 **Try it out**:
 ```bash
-# Run the tool selection evaluation
-npm run eval tool_selection
+# Run all evaluations at once
+npm run eval
 
 # View results in the dashboard
 cd dashboard && npm run dev
@@ -360,9 +366,8 @@ npm start "tell me a joke instead"
 
 **Try it out**:
 ```bash
-# Run several evaluations
-npm run eval tool_selection
-npm run eval movie_search
+# Run all evaluations
+npm run eval
 
 # View the results
 cd dashboard && npm run dev

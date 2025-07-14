@@ -71,10 +71,15 @@ The agent provides four main tools:
 
 ### 🎨 **Image Generation** - `generate_image` 
 ```bash
-> Generate an image of a cyberpunk city
-> Create a picture of a peaceful mountain lake
+# Step 1: Request an image
+npm start "Generate an image of a cyberpunk city"
+# Agent responds: "Do you approve generating an image? (yes/no)"
+
+# Step 2: You MUST run a new command with your response
+npm start "yes"
+# Image is generated!
 ```
-⚠️ **Requires approval**: The agent will ask for your confirmation before generating images
+⚠️ **Requires approval**: This is a two-step process. After the agent asks for approval, you MUST run `npm start "yes"` in your terminal (see Human-in-the-Loop section for details)
 
 ### 📱 **Reddit Browser** - `reddit`
 ```bash
@@ -288,21 +293,57 @@ npm start "I want to watch something like The Matrix"
 
 ### 🛡️ Human-in-the-Loop Approval Flows
 
-**What it is**: The agent asks for permission before executing expensive or sensitive operations.
+**What it is**: The agent asks for permission before executing expensive or sensitive operations like image generation.
 
-**Where to find it**: See the image generation flow in `src/agent.ts` (search for "needsApproval").
+**Where to find it**: See the image generation flow in `src/agent.ts` (search for "needsApproval") and the `generateImage` tool implementation.
 
 **Why it matters**: Production agents need safeguards. This pattern shows how to:
 - Identify sensitive operations
 - Request user confirmation
 - Handle approval/rejection gracefully
-- Maintain conversation flow
+- Maintain conversation flow across CLI invocations
 
-**Try it out**:
+**Important: How CLI Approval Works**
+
+This is a stateless CLI tool, so the approval process requires TWO SEPARATE terminal commands:
+
 ```bash
+# Step 1: Request an image (in your terminal)
 npm start "Generate an image of a sunset"
-# The agent will ask for approval before calling DALL-E
-# Try both approving and rejecting to see how it handles each case
+# Agent responds: "Do you approve generating an image? (yes/no)"
+# ⚠️ THE PROGRAM EXITS - IT IS NOT WAITING FOR INPUT
+
+# Step 2: You MUST run a NEW command in your terminal
+npm start "yes"
+# If approved, the image is generated
+# If you say anything else or something unclear, it will decline
+
+# Alternative rejection example:
+npm start "no"
+# Response: "User did not approve image generation at this time."
+```
+
+**Common mistake**: Just typing "yes" won't work - you need `npm start "yes"`
+
+**How it works behind the scenes**:
+1. First command triggers the image generation request
+2. Agent detects this is a sensitive operation requiring approval
+3. Agent saves the pending request and asks for approval
+4. Program exits (this is key - it's not waiting for input)
+5. Your next command is interpreted as the approval response
+6. The agent uses AI to understand if you approved ("yes", "sure", "go ahead") or not
+
+**Try different responses**:
+```bash
+# These will likely approve:
+npm start "yes please"
+npm start "sure, go ahead"
+npm start "approved"
+
+# These will likely reject:
+npm start "no thanks"
+npm start "not right now"
+npm start "tell me a joke instead"
 ```
 
 ### 📊 Built-in Observability
